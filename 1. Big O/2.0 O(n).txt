@@ -1,0 +1,34 @@
+
+O(n)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# We are going to see how our runtime grows as our input increases. (nemo example: from only one element in array to over 100000 nemos in the array)
+
+# This nemo function has a linear Time of operations. 
+
+# As we loop over the array we are doing one operation at a time. (as number of input increases the number of operation increases)
+
+
+O(n) ==> Linear Time; this n could be anything, it just an aribitary letter; its a standard.
+
+
+if we had one element then O(1), if we had ten then O(10) and if we had 100000 then O(100000). So in general the Big O is O(n) 
+
+
+# Remember that big o does not mesure time but how quickly our runtime increases actually, how quickly the number of operations increases.
+
+function findNemo(array) {
+
+	for (let i=0; i < array.length; i++) {
+
+		if (array[i] === 'nemo') {
+			console.log('found nemo!');
+		}
+	}
+}
+
+
+
+# Think of it as boxes that we want to compress with a tool like function. for each of these boxes we need to call the function (operation here):
+
+	const compressAllBoxes = boxes => { boxes.forEach(box => console.log(box)); }  O(n) - Linear Time

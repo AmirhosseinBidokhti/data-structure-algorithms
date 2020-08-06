@@ -1,0 +1,26 @@
+
+What is good code
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# We learned that good code must have 2 charateristic; being readable and scalable.
+
+# Scalable (2 thing we as engineers have to consider):
+
+	1. Speed (How many operation does it cost us) which has direct influence on time
+
+	2. Memory (The space our program will cost us)
+
+
+
+
+
+# Which code is best can be answered with 3 pillars of code (take with you for rest of your career since you should always keep them in mind as an engineer):
+
+	1. Readable clean code that is maintanble
+
+	2. Speed (has big o time complexity that is efficient and scales very well)
+
+	3. Memory usage of code (we use big o once again to talk about space complexity; same notation for different topic)
+
+
+	

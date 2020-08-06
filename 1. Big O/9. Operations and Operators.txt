@@ -1,0 +1,10 @@
+
+
+# what is operation
+
+https://whatis.techtarget.com/definition/operation
+
+
+# operators in JS
+
+https://www.w3schools.com/Jsref/jsref_operators.asp

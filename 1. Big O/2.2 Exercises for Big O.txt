@@ -1,0 +1,39 @@
+
+Exercise
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# 1
+
+// What is the Big O of the below function? (Hint, you may want to go line by line)
+function funChallenge(input) {
+  let a = 10; // O(1) Because it only happens once when we run the function regardless of how big the input is 
+  a = 50 + 3; // O(1)
+
+  for (let i = 0; i < input.length; i++) { // O(n) reflects how big the input is; loops are linear time
+    anotherFunction(); // O(n) again how many times? depends on how big input is
+    let stranger = true; // O(n)
+    a++; // O(n)
+  }
+  return a; // O(1)
+}
+
+
+# first thing we do when we call this function and it gets its execution context is we assign a function.
+
+# Then we go into a loop. we looping over depending whatever the length of the input is.
+
+
+
+
+# FINAL:
+
+	3 STEPS + n + n + n + n
+
+	BIG O(3 + 4n) GETS SIMPILFIED ===> O(n)
+	we go through that in next chapter.
+
+
+
+Another Exercise
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	

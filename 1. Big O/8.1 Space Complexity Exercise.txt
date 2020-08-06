@@ -1,0 +1,50 @@
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+function booooo(n) {
+
+	for (let i=0; i<n.length; i++) {
+
+		console.log('booooo!');
+	}
+}
+
+booooo([1,2,3,4,5]);
+
+# time complexity is O(n) for this function is O(n)
+
+# space complexity: when it comes to space complexity we are talking about additional space, we don't include the space taken up by inputs. When it comes to this function we dont
+  
+  really have control over what sort of input it recieves. we only have control of what happens inside of the function.
+
+
+# in this function the only thing we are doing is creating this i=0 variable. other than that we are not actually adding any memory.
+
+# so this function has space complexity of O(1)
+
+
+
+
+function arrayOfHiNTimes(n) {
+
+	let hiArray = [];
+
+	for (let i=0; i < n; i++) {	
+	    hiArray[i] = 'hi';
+	}
+
+	return hiArray;
+}
+
+arrayOfHiNTimes(232);
+
+
+# we have created data structure new array, then we filled that array with n elements. when it comes to big o we ignore the constant time i=0 and array and instead 
+  this becomes O(n)
+
+# Since we are creating a data structure and adding memory so each item is an additional memory space in our computers.
+
+
+		
+
+	

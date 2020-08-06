@@ -1,0 +1,27 @@
+
+Space complexity
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# When a program executes, it has two ways to remember things; the heap and stack in memory. 
+
+# Heap is where we usually store the variables that we assign values to.
+
+# Stack is where we usually keep track of our function calls. sometimes we want to optimize to use less memory instead of using less time.
+
+# Talking about memory and space complexity is very simillar to talking about speed complexity.
+
+# We simply look at total size relative to the size of the input and see how many new variables or memory we are allocating, how much memory is being used.
+
+# Imagine that boxes and compressor machine example that machine has limited amount of space to handle the boxes, if we had tone of boxes that it could not fit it might overflow.
+
+
+
+# What cause space complexity? adding things like
+
+	- Variables (learn more about primitives)
+
+	- Data Structures (hash table, array, ...)
+
+	- Function calls 
+
+	- Allocations 

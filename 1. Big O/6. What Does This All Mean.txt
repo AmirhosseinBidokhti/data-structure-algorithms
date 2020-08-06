@@ -1,0 +1,33 @@
+
+What does this all mean
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# As we go on with other components of these materials we see that how useful this Big(O) is when we learn different data structures and their methods.
+
+# we can then evaluate the scenarios to see what is the the best data structure to use based on their methods time complexity, space complexity. 
+
+# Understand all their pros and cons which we can easily understand these with Big O notation.
+
+
+# this the proper language for us to understand all these complex topic with only a notation.
+
+
+
+	DATA STRUCUTRE + ALGORITHMS = PROGRAMS
+
+
+# Data Structures are simply ways to store data and algorithms are functions or ways to use that data structure to write our programs (the instructions for our machine) and great
+  
+  programmers have this knowledge that they pick the right (since there is no best) data structure and write the right algorithms which eventually evalutes to the great programs.
+
+
+# REMEMBER THE 2 RULES OF GOOD CODE: READABLE AND SCALABLE.
+
+
+# What we just learned till now is going to lay the foundation for the rest of the content we are going to learn.
+
+# We will use big o to see what is a good solution to a problem and what is a bad solution to a problem. Most interview by the way has this core concept included.
+
+# What is the right algorithms and right data structure to use to solve the certain problem/task we are given.
+
+

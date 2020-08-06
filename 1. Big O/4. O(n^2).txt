@@ -1,0 +1,36 @@
+
+O(n^2)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Nested loops
+
+
+const boxes = [1,2,3,4,5];
+
+function logAllPairsOfArray(arr) {
+
+	arr.forEach(firstBox =>
+		arr.forEach(secondBox =>
+			console.log(firstBox, secondBox)) 
+}
+
+# What is the big(O) of this? 
+
+# When we itterate over the array it takes n times to evalute the second loop for each items in the array. meaning that each individual element cause another n amount of iteration.
+
+# n element each n iteration ==> n x n 
+
+# Big O === O(n x n) === O(n^2) - Quadratic Time
+
+# Imagine we have 2 elments then 4 operation is the cost of the algorithm. first element 2 times, second also 2 times and 4 in total.
+
+
+# In cheet chart if you look it is in horrible cordinate in the graph. pretty slow as the number of elements (inputs) increase the number of operations increases very quick and       significantly.
+
+
+# pervious example in the rule number 3 if we modify that with this approach then it would had big O of O(n x m)
+
+
+
+
+

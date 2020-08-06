@@ -1,0 +1,86 @@
+
+Big O and Scalability
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Lets keep working with our pervious nemo example. JS gives us a nifty little tool that comes built in to the browser to mesure how long our code would takes to run: 
+
+  performance.now() // acts as an timer
+
+
+
+const nemo = ['nemo'];
+
+// a way in JS to create big chunks of array and fill them with values we want
+
+const large = new Array(100000).fill('nemo');
+
+function findNemo(array) {
+
+	const t0 = performance.now();
+	
+	for (let i=0; i < array.length; i++) {
+
+		if (array[i] === 'nemo') {
+			console.log('found nemo!');
+		}
+	}
+
+	const t1 = performance.now();
+	console.log('call to find nemo took ' + (t1-t0) + ' milliseconds');
+
+}
+
+findNemo(nemo);
+findNemo(large);
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+# As our input grows, our function findNemo becomes slower, slower and slower.
+
+# Our runtime, (time that it takes to run a certain problem through a function increases)
+
+
+# Other problem, if you take this function and run it on your computer it is going to be different. Might be a lot faster or a lot slower.
+
+# It all depends on the CPU and what other programs might be running on your computer (your code might run on a server when you publish it), what programming language you are using and   many other factors.
+
+# Therefore if we wanted to evaluate how fast this function and tell other people about there is no meaningful way to describe. (so many factors)
+
+
+
+
+
+# How can we make sure that there is a way for us to measure in terms of efficienty what is good code and what is bad code? 
+
+# What is the code that can scale (in pervious example as number of inputs increases it does not constantly slow down more and more)
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Big(O) notation is the language we use to talk about how long an algorithm takes to run. we can compare 2 algorithms, functions using Big(O), deiciding which one is better than the
+  other when it comes to scale regardless of our computer differences.
+
+
+# Of course all those factors like computer hardwares, some cases internet speed (in online apps) and other factors play roles too but regardless of all of them we need a way to 
+  decide, mesure and understand the algroithm's performance.
+
+
+
+# Look at the next photo chart. 
+
+  Big(O): When we grow bigger and bigger with our input, how much our function slow down? how much number of operations we have to do?
+
+
+
+
+# So instead of using time which is not a good factor because it is also based on so many other factors itself, we can just calculate how many operations does our algorithms do
+  how many steps it does takes.
+
+
+
+
+
+
+

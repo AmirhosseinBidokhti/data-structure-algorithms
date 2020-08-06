@@ -1,0 +1,32 @@
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Big O says which function, algorithm or code is the best. 
+
+# We learned that when we talk about good code we really insist on two things the readability and scalibilty and Big O allows us to measure and evaluate the idea of scalable code.
+
+# Why do we care? 
+
+	- because there is no such a thing as a free lunch; you save time and money for a compony you are a super star.
+	- knowing how much time your code takes, how much memory that it uses it really critical. those are expensive things for a company and of course yourself when you 
+          develop apps for yourself.
+
+# Big O is a very important concept that you won't find in your day to day job but it is something that you should keep in the back of your mind. and good developers and engineers
+  always keep it in their mind.
+
+
+# We learned about the ideas of time complexity and space complexity and how to measure both them and how each of them is a tradeoff between one another.
+
+# Big O always describe our upper band. we always evalute the worst case scenarios. we want to be pesimistic.
+
+# Big O is about how we can scale. 
+
+# But not always we care about scalability. readability also plays a grand role in our good code development. sometimes readiblity might be more important than scalibilty too!
+
+# Sometimes time complexity might matters more than space complexity to you. you should be aware of these things based on your goal that you want to achieve.
+
+
+# Pre-mature optimization can be the root of all evils. its famous quote all devs know. Sometimes optimizing for time or space can negatively impact the readibility of code.
+
+
+# Data should be sufficiently big to talk about Big O. that is also a thing to keep in mind. (the startup on budget example)

@@ -1,0 +1,41 @@
+
+O(1)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Imagine we had a this function this time:
+
+	const compressFirstBox = boxes => { console.log(boxes[0]); }
+
+# How many operation does this function takes if the number of input (array size and elements increases)? 
+
+# The big O for this is O(1)
+
+
+
+# No matter how many boxes increases or how many of them we have we are always just grabbing the first item in the array. 
+
+# Again imagine we had actual boxes in a factory that we wanted to compress with some kind of giant robot, the number of time this giant robot (operation) gonna work and take is only
+  one time for that only box.
+
+# O(1) --> CONSTANT TIME
+
+
+
+# But what if we had a function like this one:
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+const boxes = [0,1,2,3,4,5,6];
+
+function logFirstTwoBoxes(boxes) {
+
+	console.log(boxes[0]);  // O(1)
+	console.log(boxes[1]);	// O(1)
+}
+
+logFirstTwoBoxes(boxes); // O(2)
+
+# In this case no matter how big the input is we are do constant amount of operations. so we round this to O(1); whether it is O(100000) or O(2)
+
+# Keep in mind inputs could be any type of data not just arrays.
+
+# We love O(1) because it is very SCALABLE. No matter how many ELEMENTS we have it is always going to run the same!

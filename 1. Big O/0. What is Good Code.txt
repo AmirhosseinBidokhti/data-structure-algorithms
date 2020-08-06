@@ -1,0 +1,49 @@
+
+WHAT IS GOOD CODE?
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# There are 2 main things when we say this is good code:
+	1. Readable
+	2. Scalable
+
+# 1. Is it generally clean and other people can understand your code? the good code is the one that humans can understand not just computers.
+
+# 2. Big o notation is what allows us to measure this idea of scalable. code that can scale.
+
+
+# Take this example:
+
+	- Instruction(cake recipe) ==> Kitchen ==> Cake 
+
+	- Instruction(program) ==> Machine(computers) ==> Output(our goal)
+
+
+# Just like baking a cake which there are plenty of ways to bake, different instructions and also tools for making the same cake, efficient way and in-efficient ways 
+  same thing is applied to the making computer programs.
+
+
+
+# This example is an instruction that we give (to find nemo). we call this a runtime (how long does it take to run a certain problem through a function)
+
+# how can we find big(O) of something like this? How to learn about the efficienty of code?
+
+# Next time we will see what happens as the array gets larger and larger. And will tie things togther as to what scalable means and how Big(O) allows us to measure it.
+
+
+const nemo = ['nemo'];
+
+const large = new Array(1000).fill('nemo
+
+function findNemo(array) {
+	for (let i=0; i < array.length; i++) {
+
+		if (array[i] === 'nemo') {
+			console.log('found nemo!');
+		}
+	}
+}
+
+findNemo(nemo);
+
+
+

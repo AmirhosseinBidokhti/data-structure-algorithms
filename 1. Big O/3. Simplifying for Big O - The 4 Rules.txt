@@ -1,0 +1,168 @@
+
+Simplifying Big Os
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# How do we simplify our Big Os? There are several rules:
+
+	1. Worst Case
+
+	2. Remove Constants
+
+	3. Different Terms For Inputs
+
+	4. Drop Non Domiants
+
+
+
+
+
+1. Worst Case
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# lets begin with our findNemo example. imagine that nemo was at first index or 4, not where we actually need to iterate the whole array. but if we console.log something at very 
+  begining of the iteration of array we see that it still iterates even if nemo gets find at first place.
+
+# We can prevent that by using a break statement.
+
+# You might say okay then the big o will be o(1) if it was at first index and o(4) if it was at forth chunk of this array. kinda right but the thing is we see it as grand perspective.
+  big schema things big o only cares about worst case.
+
+# We can't be certain of what input is goint to be so we always go for the worst case so this function's Big(O) is still O(n).
+
+
+const nemo = ['nemo'];
+
+const everyone = ['dory', 'bruce', 'marlin', 'nemo', 'gill', 'bloat', 'nigel', 'squirt', 'darla', 'hank'];
+
+function findNemo(array) {
+	for (let i=0; i< array.length; i++) {
+	   console.log('running loop');
+	   if(array[i] === 'nemo') {
+		console.log('found nemo');
+		//break;
+	   }
+	}
+}
+
+# best case nemo at first index worst at the end of array. we always care about worst case scenario. because when we talk about scalibility we can't just assume things are going well.
+
+findNemo(everyone);
+
+
+
+
+
+
+2. Remove Constants
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+function printFirstItemThenFirstHalfThenSayHi100Times(items) {
+    console.log(items[0]);
+
+    var middleIndex = Math.floor(items.length / 2);
+    var index = 0;
+
+    while (index < middleIndex) {
+        console.log(items[index]);
+        index++;
+    }
+
+    for (var i = 0; i < 100; i++) {
+        console.log('hi');
+    }
+}
+
+
+O(1+1+1, tho its while loop but we are only logging half of the items n/2, trick no matter how big the item is this is a constant amount of iteration of loop 100)
+
+= O(3 + n/2 + 100)
+
+# rule 2 we drop the constants. also we dont care about division by 2.  when the input grows like 10000000 adding 100 does not a lot and we dont care about it.
+  same things for the division or multiplication. as n gets larger and larger dividing by 2 has decreasingly significant effect.
+
+final:
+	O(n)	
+
+
+# Imagine another function like: 
+
+	function compressBoxesTwice(boxes) {
+		boxes.forEach(box => console.log(box))  // o(n)
+									// o(n+n) = o(2n) ===> again does not really matter drop constants => o(n)
+		boxes.forEach(box => console.log(box))  // o(n)
+	}
+
+	// Also if you visual it on a grap we see that as the elements increase we have 2 operations since we have 2 loops, if we have 2 elements 4 operations.
+	   at the end of the day even tho the line is deeper and we have more operations the way line increases in linear.
+
+
+
+
+
+
+3. Different Terms For Inputs
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# diffrent inputs might/worst case have not same length. in this example below, first loop it based on the length of the first input and the second loop depends on the second input.
+
+
+function compressBoxesTwice(boxes, boxes2) {
+
+	boxes.forEach(box => { console.log(box); }
+
+	boxes2.forEach(box => { console.log(box); }
+}
+
+# first might have n number of elements and second m numbers.
+
+# in this case the big O will be something like : O(a + b) or O(m + n)
+
+# Keep it in mind just because you see two for loops one after another doesn't mean that they are looping over the same item!
+
+
+
+
+
+4. Drop Non Dominant Terms
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Lets say we have a function:
+
+function printAllNumbersThenAllPairSums(numbers) {
+
+	console.log('these are the numbers:');
+	numbers.forEach(number => { console.log(number) });
+
+	console.log('these are their pair sums:');
+
+	numbers.forEach(number => {
+		numbers.forEach(secondNumber => {
+			console.log(number + secondNumber);
+		}
+	});
+}
+ 
+printAllNumbersThenAllPairSums([1,2,3,4,5,6]);
+
+
+# O(n + n*n) =====> we drop the 'Non Dominant Terms' ======> we care about the most important terms 
+
+# Because as the input increase the size of n^2 is way more important than n. 
+
+# final Big O === O(n^2)
+
+
+let see another example: 
+	
+	O(x^2 + 3x + 100 + x/2) =====> simplify by drop non dominant terms ==> O(x^2)
+
+# imagine the input x input was consist of 5 elements.
+
+# 5^2 = 25, 3x5 = 15, 100, 2.5 in this case the 100 is bigger than 5^2 but with Big O we always think about worst cases and scalibility. always keep that in mind.
+
+# We only care about Scale and how it how significant it would scale. which one ss the most dominant term when it comes to scale.
+
+
+
+
+
